@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Apple Products</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="frame">
+        <!-- Navbar -->
+        <nav class="navbar">
+          <a href="#" class="logo">Apple Products</a>
+          <div class="navigation">
+            <a href="#" class="nav-link">
+              <i class="bx bx-home-alt-2"></i>
+              <span>Home</span>
+              <i class="bx bxs-folder-open"></i>
+            </a>
+            <a href="#" class="nav-link">
+              <i class="bx bx-mobile-alt"></i>
+              <span>iPhone</span>
+              <i class="bx bxs-folder"></i>
+            </a>
+            <a href="#" class="nav-link">
+              <i class="bx bx-laptop"></i>
+              <span>MacBook</span>
+              <i class="bx bxs-folder"></i>
+            </a>
+            <a href="#" class="nav-link">
+              <i class="bx bxs-watch-alt"></i>
+              <span>Watch</span>
+              <i class="bx bxs-folder"></i>
+            </a>
+            <a href="#" class="nav-link">
+              <i class="bx bx-desktop"></i>
+              <span>iMac</span>
+              <i class="bx bxs-folder"></i>
+            </a>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icon">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bx bxl-youtube"></i>
+            </a>
+          </div>
+        </nav>
+        <a href="#" class="hamburger-menu">
+          <i class="bx bx-menu"></i>
+        </a>
+        <!-- End of Navbar -->
+        <!-- Frame Controls -->
+        <div class="controls">
+          <a href="#" class="zoom"><i class="bx bxs-zoom-in"></i> </a>
+          <a href="#" class="page-nav change"><i class="bx bx-x-circle"></i></a>
+        </div>
+        <!-- End Of Frame Controls -->
+        <!-- Pages  -->
+        <div class="pages">
+          <!-- Home -->
+          <div class="home change">
+            <a href="#">
+              <span>iPhone</span>
+              <img src="images/iphone.jpg" draggable="false" />
+            </a>
+            <a href="#">
+              <span>MacBook</span>
+              <img src="images/macbook.jpg" draggable="false" />
+            </a>
+            <a href="#">
+              <span>Smart Watch</span>
+              <img src="images/watch.jpg" draggable="false" />
+            </a>
+            <a href="#">
+              <span>iMac</span>
+              <img src="images/imac.png" draggable="false" />
+            </a>
+          </div>
+          <!-- End of Home -->
+
+          <!-- iPhone -->
+          <div class="iphone">
+            <h3 class="heading">Which iPhone is right for you?</h3>
+            <div class="iphone-cards">
+              <div class="iphone-card">
+                <img src="images/iphone-14-pro.jpg" />
+                <a href="#" class="name">iPhone 14 Pro</a>
+                <p class="description">The ultimate iPhone.</p>
+                <span class="price">From $999</span>
+                <button type="button" class="basic-btn">Buy</button>
+              </div>
+              <div class="iphone-card">
+                <img src="images/iphone-14.jpg" />
+                <a href="#" class="name">iPhone 14</a>
+                <p class="description">A total powerhouse.</p>
+                <span class="price">From $799</span>
+                <button type="button" class="basic-btn">Buy</button>
+              </div>
+              <div class="iphone-card">
+                <img src="images/iphone-13.jpg" />
+                <a href="#" class="name">iPhone 13</a>
+                <p class="description">As amaizing as ever.</p>
+                <span class="price">From $599</span>
+                <button type="button" class="basic-btn">Buy</button>
+              </div>
+            </div>
+          </div>
+          <!-- End of iPhone -->
+
+          <!-- macBook -->
+          <div class="macbook">
+            <h1 class="heading">Choose your new MacBook Air.</h1>
+            <div class="macbook-btns">
+              <a href="#" class="m1-macbook-btn active">
+                <span>With M1 chip</span>
+                <span>From $999</span>
+              </a>
+              <a href="#" class="m2-macbook-btn">
+                <span>With M2 chip</span>
+                <span>From $1199</span>
+              </a>
+            </div>
+            <div class="macbook-card m1 active">
+              <div class="macbook-imgs m1-imgs">
+                <img
+                  src="images/macbook-air-space-gray-m1.jpg"
+                  class="active"
+                />
+                <img src="images/macbook-air-gold-m1.jpg" />
+                <img src="images/macbook-air-silver-m1.jpg" />
+              </div>
+              <span class="macbook-color m1-macbook-color">Space gray</span>
+              <div class="macbook-img-controls m1-controls">
+                <a
+                  href="#"
+                  style="background-color: #b2b5b8"
+                  class="active"
+                  data-color="Space gray"
+                ></a>
+                <a
+                  href="#"
+                  style="background-color: #f0e0d3"
+                  data-color="Gold"
+                ></a>
+                <a
+                  href="#"
+                  style="background-color: #e0e2e1"
+                  data-color="Silver"
+                ></a>
+              </div>
+              <img src="images/apple-m1-icon.png" class="m-icon" />
+              <div class="card-text">
+                <p>8-Core CPU</p>
+                <p>7-Core CPU</p>
+                <p>8GB Unified Memory</p>
+                <p>256GB SSD Storage</p>
+              </div>
+              <button type="button" class="basic-btn">Buy</button>
+            </div>
+
+            <div class="macbook-card m2">
+              <div class="macbook-imgs m2-imgs">
+                <img src="images/macbook-air-midnight-m2.jpg" class="active" />
+                <img src="images/macbook-air-starlight-m2.jpg" />
+                <img src="images/macbook-air-spacegray-m2.jpg" />
+                <img src="images/macbook-air-silver-m2.jpg" />
+              </div>
+              <span class="macbook-color m2-macbook-color">Midnight</span>
+              <div class="macbook-img-controls m2-controls">
+                <a
+                  href="#"
+                  style="background-color: #2e3641"
+                  class="active"
+                  data-color="Midnight"
+                ></a>
+                <a
+                  href="#"
+                  style="background-color: #f0e5d3"
+                  data-color="Starlight"
+                ></a>
+                <a
+                  href="#"
+                  style="background-color: #7d7e80"
+                  data-color="Space gray"
+                ></a>
+                <a
+                  href="#"
+                  style="background-color: #e3e4e6"
+                  data-color="Silver"
+                ></a>
+              </div>
+              <img src="images/apple-m2-icon.png" class="m-icon" />
+              <div class="card-text">
+                <p>8-Core CPU</p>
+                <p>8-Core CPU</p>
+                <p>8GB Unified Memory</p>
+                <p>256GB SSD Storage</p>
+              </div>
+              <button type="button" class="basic-btn">Buy</button>
+            </div>
+          </div>
+          <!-- End of macBook -->
+
+          <!-- Watch -->
+          <div class="watch">
+            <h1 class="heading">Which Apple Watch is right for you?</h1>
+            <div class="watch-cards">
+              <div class="watch-card">
+                <div class="watch-imgs">
+                  <img src="images/watch-compare-s8-img-1.jpg" />
+                  <img src="images/watch-compare-s8-img-2.jpg" />
+                </div>
+                <h3 class="watch-name">Apple Watch Series 8</h3>
+                <a href="#" class="watch-price">From $399</a>
+                <p class="watch-desc">
+                  <span>45mm or 41mm case size</span>
+                  <span>50m water resistant</span>
+                  <span>Swimproof</span>
+                </p>
+                <a href="#" class="basic-btn">Shop</a>
+              </div>
+              <div class="watch-card">
+                <div class="watch-imgs">
+                  <img src="images/watch-compare-se-img-1.jpg" />
+                  <img src="images/watch-compare-se-img-2.jpg" />
+                </div>
+                <h3 class="watch-name">Apple Watch SE</h3>
+                <a href="#" class="watch-price">From $249</a>
+                <p class="watch-desc">
+                  <span>44mm or 40mm case size</span>
+                  <span>50m water resistant</span>
+                  <span>Swimproof</span>
+                </p>
+                <a href="#" class="basic-btn">Shop</a>
+              </div>
+              <div class="watch-card">
+                <div class="watch-imgs">
+                  <img src="images/watch-compare-ultra-img-1.jpg" />
+                  <img src="images/watch-compare-ultra-img-2.jpg" />
+                </div>
+                <h3 class="watch-name">Apple Watch Ultra</h3>
+                <a href="#" class="watch-price">From $799</a>
+                <p class="watch-desc">
+                  <span>49mm case size</span>
+                  <span>10m water resistant</span>
+                  <span>Swimproof</span>
+                </p>
+                <a href="#" class="basic-btn">Shop</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of Watch -->
+
+          <!-- iMac -->
+          <div class="imac">
+            <div class="side-image imac-img">
+              <img src="images/imac/green-side.jpg" />
+            </div>
+            <div class="front-image imac-img">
+              <img src="images/imac/green-front.jpg" />
+            </div>
+            <div class="back-image imac-img">
+              <img src="images/imac/green-back.jpg" />
+            </div>
+            <div class="imac-image-controls">
+              <a
+                href="#"
+                class="active"
+                data-color="green"
+                style="background-color: #10505b"
+              >
+                <span>Green</span></a
+              >
+              <a href="#" data-color="yellow" style="background-color: #d48207">
+                <span>Yellow</span></a
+              >
+              <a href="#" data-color="orange" style="background-color: #e36942">
+                <span>Orange</span></a
+              >
+              <a href="#" data-color="pink" style="background-color: #b72c31">
+                <span>Pink</span></a
+              >
+              <a href="#" data-color="purple" style="background-color: #353a71">
+                <span>Purple</span></a
+              >
+              <a href="#" data-color="silver" style="background-color: #c7c8ca">
+                <span>Silver</span></a
+              >
+              <button type="button" class="basic-btn">Shop</button>
+            </div>
+          </div>
+          <!-- End of iMac -->
+        </div>
+        <!-- End of Pages  -->
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

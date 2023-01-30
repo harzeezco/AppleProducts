@@ -1,0 +1,734 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.heading {
+  font-size: 4.5rem;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.basic-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  background-color: #22b9ff;
+  border: none;
+  border-radius: 5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.frame {
+  width: 70vw;
+  height: 85vh;
+  min-width: 70vw;
+  min-height: 85vh;
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 2rem;
+  resize: both;
+  overflow: auto;
+  border: 0.1rem solid #c0c0c0;
+  position: relative;
+  display: flex;
+  transition: all 0.1s;
+}
+
+.frame.change {
+  min-width: 97vw;
+  min-height: 97vh;
+}
+
+.navbar {
+  width: 30rem;
+  height: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0 0 2rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #df4b4b;
+  margin-bottom: 4rem;
+}
+
+.navigation {
+  flex-grow: 1;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.nav-link {
+  margin-block: 3rem;
+  width: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link i:first-child {
+  font-size: 2rem;
+  color: #e794bb;
+}
+
+.nav-link i:last-child {
+  font-size: 1.5rem;
+  color: #e2d521;
+}
+
+.nav-link span {
+  font-size: 1.4rem;
+  color: #555;
+  letter-spacing: 0.1rem;
+  flex-grow: 1;
+  justify-self: flex-start;
+  margin-left: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem 2rem 0;
+}
+
+.social-icons i {
+  font-size: 2rem;
+  color: #df4b4b;
+}
+
+.controls {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+  z-index: 10;
+}
+
+.controls a {
+  font-size: 2.2rem;
+  color: #e794bb;
+}
+
+.page-nav.change {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.pages {
+  flex-grow: 1;
+  background: url(images/pages-bg.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.pages > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -105%;
+  transition: top 0.5s;
+}
+
+.pages > div.change {
+  top: 0;
+  transition: top 0.5s 0.5s;
+}
+
+/* home */
+.home {
+  background-color: #f8f8f8;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 1rem;
+}
+
+.home a {
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  position: relative;
+}
+
+.home span {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: transparent;
+  background-image: linear-gradient(#e63d3d, #e7e74c);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.home img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+/* End of Home */
+
+/* iPhone */
+.iphone {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.iphone-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.iphone-card {
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iphone-card img {
+  width: 16rem;
+}
+
+.iphone-card a {
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.iphone-card p {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.iphone-card .price {
+  font-size: 1.5rem;
+  color: #22b9ff;
+  font-weight: 600;
+}
+/* End of iPhone */
+
+/* MacBook */
+.macbook {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.macbook-btns {
+  display: flex;
+}
+
+.macbook-btns a {
+  border: 0.1rem solid #333;
+  width: 14rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.macbook-btns a.active {
+  border: 0.2rem solid #22b9ff;
+}
+
+.m1-macbook-btn {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.m2-macbook-btn {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.macbook-btns span:first-child {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.macbook-btns span:last-child {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.macbook-card {
+  display: none;
+}
+
+.macbook-card.active {
+  display: block;
+}
+
+.macbook-color {
+  font-size: 1.4rem;
+  color: #333;
+  letter-spacing: 0.1rem;
+}
+
+.macbook-img-controls a {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  border-radius: 5rem;
+  margin: 1rem 0.2rem;
+  border: 0.2rem solid transparent;
+}
+
+.macbook-img-controls a:hover {
+  border: 0.2rem solid #df4b4b;
+}
+
+.macbook-img-controls a.active {
+  border: 0.3rem solid #22b9ff;
+}
+
+.card-text {
+  margin-block: 1rem;
+}
+
+.card-text p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.macbook-imgs {
+  width: 30rem;
+  height: 25rem;
+  position: relative;
+}
+
+.macbook-imgs img {
+  position: absolute;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.macbook-imgs img.active {
+  visibility: visible;
+  opacity: 1;
+}
+/* End ofMacBook */
+
+/* Watch */
+.watch {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.watch-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.watch-card {
+  height: 43rem;
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.watch-imgs {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+}
+
+.watch-imgs img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  position: absolute;
+  transition: opacity 0.3s;
+}
+
+.watch-imgs img:first-child {
+  opacity: 1;
+}
+
+.watch-imgs img:last-child {
+  opacity: 0;
+}
+
+.watch-imgs:hover img:first-child {
+  opacity: 0;
+}
+
+.watch-imgs:hover img:last-child {
+  opacity: 1;
+}
+
+.watch-name {
+  font-size: 1.8rem;
+}
+
+.watch-price {
+  font-size: 1.5rem;
+  color: #22b9ff;
+}
+
+.watch-desc span {
+  display: block;
+  font-size: 1.3rem;
+}
+/* End of Watch */
+
+.imac {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+
+.side-image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.front-image {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+}
+
+.back-image {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.imac-img {
+  display: grid;
+  place-items: center;
+  background-color: #fafafa;
+}
+
+.imac-image-controls {
+  position: absolute;
+  top: 50%;
+  left: 4rem;
+  transform: translateY(-50%);
+}
+
+.imac-image-controls a {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5rem;
+  margin-block: 0.5rem;
+  position: relative;
+}
+
+.imac-image-controls a.active span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.imac-image-controls span {
+  font-size: 1.4rem;
+  color: #222;
+  font-weight: 500;
+  position: absolute;
+  left: 110%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3rem;
+}
+
+.imac-image-controls button {
+  margin-top: 5rem;
+}
+
+/* Responsive */
+@media (max-width: 1700px) {
+  .heading {
+    font-size: 4rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    width: 20rem;
+  }
+
+  .iphone-card {
+    height: 40rem;
+  }
+
+  .iphone-card img {
+    width: 13rem;
+  }
+
+  .macbook-btns a {
+    width: 12rem;
+    height: 6rem;
+  }
+
+  .macbook-btns span:first-child {
+    font-size: 1.5rem;
+  }
+
+  .macbook-btns span:last-child {
+    font-size: 1.4rem;
+  }
+
+  .macbook-imgs {
+    width: 27rem;
+    height: 22rem;
+  }
+
+  .watch-card {
+    width: 17rem;
+  }
+
+  .watch-name {
+    font-size: 1.6rem;
+  }
+
+  .imac {
+    gap: 1rem;
+  }
+
+  .imac-image-controls a {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .side-image img {
+    width: 18rem;
+  }
+
+  .front-image img,
+  .back-image img {
+    width: 28rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .navbar {
+    width: 17rem;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .iphone-card a {
+    font-size: 2rem;
+  }
+
+  .iphone-card p {
+    font-size: 1.6rem;
+  }
+
+  .iphone-card span {
+    font-size: 1.4rem;
+  }
+
+  .macbook-btns a {
+    width: 10rem;
+    height: 5rem;
+  }
+
+  .macbook-btns span:first-child {
+    font-size: 1.3rem;
+  }
+
+  .macbook-btns span:last-child {
+    font-size: 1.2rem;
+  }
+
+  .macbook-imgs {
+    width: 20rem;
+    height: 17rem;
+  }
+
+  .macbook-color {
+    font-size: 1.2rem;
+  }
+
+  .macbook-img-controls a {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .card-text p {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .watch-card {
+    height: 36rem;
+    width: 17rem;
+  }
+
+  .watch-imgs {
+    height: 16rem;
+  }
+
+  .watch-name {
+    font-size: 1.4rem;
+  }
+
+  .imac {
+    gap: 0.5rem;
+  }
+
+  .imac-image-controls {
+    left: 2rem;
+  }
+
+  .imac-image-controls a {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .imac-image-controls span {
+    font-size: 1.2rem;
+  }
+
+  .side-image img {
+    width: 12rem;
+  }
+
+  .front-image img,
+  .back-image img {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .frame {
+    min-width: 99vw;
+    min-height: 99vh;
+  }
+
+  .controls {
+    width: fit-content;
+  }
+
+  .controls a:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .heading {
+    font-size: 2.8rem;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: #22b9ff;
+    font-size: 2.5rem;
+    z-index: 10;
+  }
+
+  .social-icons {
+    padding: 0 4rem 8rem 0;
+  }
+
+  .navbar {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s;
+  }
+
+  .navbar.change {
+    left: 0;
+  }
+
+  .watch-cards .basic-btn {
+    align-self: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .iphone-card:last-child {
+    display: none;
+  }
+
+  .watch-card:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .side-image img {
+    align-self: flex-start;
+    padding-top: 3rem;
+  }
+
+  .imac-image-controls {
+    top: 75%;
+    left: 5rem;
+  }
+
+  .imac-image-controls button {
+    margin-top: 2rem;
+  }
+
+  .front-image img,
+  .back-image img {
+    width: 90%;
+  }
+}
